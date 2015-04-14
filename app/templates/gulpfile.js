@@ -30,6 +30,7 @@ gulp.task('styles', function (done) {
     from: 'app/main.less',
     to: '.tmp/main.css',
     base: 'app',
+    embedErrors: true,
     csswring: { removeAllComments: true },
     autoprefixer: { browsers: supportedBrowsers }
   }).then(done, done);
